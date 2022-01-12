@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.1,0,0,-0.1,0,512)">
+        <g transform="matrix(10,0,0,-10,131.319,5068.68)">
+            <rect x="29" y="37" width="427.736" height="427.736" style="fill:rgb(0,66,8);"/>
+        </g>
+        <g transform="matrix(8.79679,1.20321,1.20321,-8.79679,121.693,4474.61)">
+            <rect x="29" y="37" width="427.736" height="427.736" style="fill:rgb(47,112,55);"/>
+        </g>
+        <g transform="matrix(7.69196,0,0,-7.69196,969.941,4474.67)">
+            <text x="70px" y="280px" style="font-family:'Keifont';font-size:283.397px;fill:white;">沼</text>
+        </g>
+        <g transform="matrix(4.54826,0,0,-4.54826,952.658,2239.71)">
+            <text x="70px" y="280px" style="font-family:'Keifont';font-size:283.397px;fill:white;">LAB</text>
+        </g>
+    </g>
+</svg>

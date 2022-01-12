@@ -1,4 +1,7 @@
 theme: jekyll-theme-minimal
 title: 沼Lab
 description: 沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。
-google_analytics_v4: G-CNWPLXESZS
+google_analytics: G-CNWPLXESZS
+logo: /assets/img/logo.png
+author: Kamesuta
+github_username: Numa-Lab
