@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+![沼Lab](https://cdn.discordapp.com/attachments/930083950880256001/930086434570928148/Lab.png)
 
-You can use the [editor on GitHub](https://github.com/Numa-Lab/www.numalab.net/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## 沼Lab
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。
 
-### Markdown
+### 沼メンバー
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- [かめすた](https://twitter.com/Kmesuta)
+- [Bun133](https://twitter.com/bun133_)
 
-```markdown
-Syntax highlighted code block
+### 製作中
 
-# Header 1
-## Header 2
-### Header 3
+| 製作者   | 制作物 | 概要 | URL |
+|---------|-------|-----|-----|
+| かめすた | 吹っ飛び率プラグイン | スマブラの吹っ飛び率をマイクラで。 | https://github.com/Numa-Lab/SmashCraft |
+| Bun133 | 連帯責任クラフト | 全ての行動はチームの連帯責任となり、連帯で死に、連帯でBANされる。発言はチームの発言になる。 | |
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Numa-Lab/www.numalab.net/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
