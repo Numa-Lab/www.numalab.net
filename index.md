@@ -1,13 +1,6 @@
-![沼Lab](https://cdn.discordapp.com/attachments/930083950880256001/930086434570928148/Lab.png)
-
-## 沼Lab
-
-沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。
-
-### 沼メンバー
-
-- [かめすた](https://twitter.com/Kmesuta)
-- [Bun133](https://twitter.com/bun133_)
+---
+layout: home
+---
 
 ### 製作中
 

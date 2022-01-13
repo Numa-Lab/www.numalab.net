@@ -1,7 +1,24 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: raviriley/agency-jekyll-theme
+
 title: 沼Lab
 description: 沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。
-google_analytics: G-CNWPLXESZS
-logo: /assets/img/logo.png
 author: Kamesuta
 github_username: Numa-Lab
+
+logo: #optional, defaults to site title
+  path: /assets/img/logo.png
+  height: 60 #height in px, defaults to 52px
+
+locale: "ja-JP"
+
+analytics:
+  google: G-CNWPLXESZS
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+plugins:
+  - jekyll-remote-theme

@@ -1,0 +1,144 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.ymlhttps://fontawesome.com/icons
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# Japanese
+# -----------------
+ja: &DEFAULT_JA
+  header:
+    title: 沼勢によるプログラミングコミュニティ!
+    text: 沼Labへようこそ
+    button: 沼Labとは？
+    buttonlink: "#services"
+
+  services:
+    title: "活動"
+    text: "沼Labは何をするところ？"
+    section: services
+    list:
+      - title: "プラグイン開発"
+        desc: "Java言語を使用してMinecraftのプラグインやModを制作します。また、必要に応じでリソースパックやデータパックを制作します。"
+        icon: fas fa-laptop-code #find more at https://fontawesome.com/icons
+      - title: "[配信](https://www.youtube.com/c/Kamesuta)"
+        desc: "YouTubeの配信やツイートで開発の様子を発信していきます。"
+        icon: fab fa-youtube
+      - title: "テストプレイ"
+        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。Discord鯖も近日公開予定です！"
+        icon: fas fa-cube
+
+  portfolio:
+    title: "制作"
+    text: "沼Labのプラグイン"
+    section: portfolio
+    closebutton: "閉じる"
+
+  team:
+    title: "沼Labメンバー"
+    text: "ゆかいな沼メンバー!"
+    subtext: 日本語不自由な沼メンバーたち、果たして彼らは正しく意思疎通が取れるのだろうか？！
+    section: team
+    people:
+      - name: "かめすた"
+        role: "リーダー 開発者"
+        image: assets/img/team/Kamesuta.jpg
+        social:
+          - url: https://twitter.com/Kmesuta
+            icon: fab fa-twitter
+          - url: https://www.youtube.com/c/Kamesuta
+            icon: fab fa-youtube
+          - url: https://github.com/Kamesuta
+            icon: fab fa-github
+          - url: https://fifty-people-craft.fandom.com/ja/wiki/%E3%81%8B%E3%82%81%E3%81%99%E3%81%9F
+            icon: fas fa-book-open
+      - name: "Bun133"
+        role: "開発者"
+        image: assets/img/team/Bun133.webp
+        social:
+          - url: https://twitter.com/bun133_
+            icon: fab fa-twitter
+          - url: https://www.youtube.com/channel/UCMkRURJGzNnML3Rprb21O5A
+            icon: fab fa-youtube
+          - url: https://github.com/Bun133
+            icon: fab fa-github
+          - url: https://fifty-people-craft.fandom.com/ja/wiki/%E3%83%96%E3%83%B3
+            icon: fas fa-book-open
+      - name: "わいぷす"
+        role: "お世話係"
+        image: assets/img/team/stcYps.jpg
+        social:
+          - url: https://twitter.com/stcYps7
+            icon: fab fa-twitter
+          - url: https://github.com/stcYps
+            icon: fab fa-github
+
+  about:
+    title: "沼Labについて"
+    text: "沼Labとは"
+    body: "<img src=\"assets/img/logo.png\" alt=\"沼Lab\" width=\"200\"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。"
+    section: about
+
+  timeline:
+    title: "タイムライン"
+    text: "沼Labの歴史"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "沼Lab発足"
+        year: "2021/01/11"
+        desc: "Bun133がKUN配信中に沼DMを送ったことにより、Bun133の沼さ、そしてかめすたの沼さについて言及され、2人は「沼Lab」としてプラグインの作成を命令された。"
+        image: assets/img/timeline/1.png
+        alt: 沼Labロゴ
+      - title: "沼Lab Discord誕生"
+        year: "2021/01/12"
+        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。近日公開予定！"
+        image: assets/img/timeline/2.jpg
+        alt: 沼Lab Discord
+      - title: "沼Lab YouTube配信開始"
+        year: "2021/01/12"
+        desc: "[第一回目のプラグイン制作配信](https://youtu.be/yMRyOvaTaYM)がかめすたのYouTubeチャンネルで始まった。沼Labは「視聴者と近い」開発コミュニティを目指していく！"
+        image: assets/img/timeline/3.jpg
+        alt: 沼Lab 配信
+      - title: "沼Lab 第一回テストプレイ"
+        year: "2021/01/13"
+        desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! 鯖を作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
+        image: assets/img/timeline/4.png
+        alt: 沼Lab テストプレイ
+      - title: "沼Lab Webサイト公開"
+        year: "2021/01/14"
+        desc: "沼LabのWebサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
+        image: assets/img/timeline/5.png
+        alt: 沼Lab Webサイト
+        # you can enforce the alignment
+        align: right
+    end: "まだ沼Labは <br> 始まった <br> ばかりだ!"
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  footer:
+    social:
+      - url: https://github.com/Numa-Lab
+        icon: "fab fa-github"
+ja-JP:
+  <<: *DEFAULT_JA
