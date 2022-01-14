@@ -16,7 +16,7 @@ caption:
 
 {:.list-inline}
 - [GitHub](https://github.com/Numa-Lab/SmashCraft)
-- [ダウンロード (まだ)](https://github.com/Numa-Lab/SmashCraft)
+- [ダウンロード](https://github.com/Numa-Lab/SmashCraft/releases)
 
 {:.list-inline}
 - 制作日時: 2022/01/12～
