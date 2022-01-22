@@ -96,7 +96,7 @@ ja: &DEFAULT_JA
         alt: 沼Labロゴ
       - title: "沼Lab Discord誕生"
         year: "2022/01/12"
-        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。近日公開予定！"
+        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
         image: assets/img/timeline/2.jpg
         alt: 沼Lab Discord
       - title: "沼Lab YouTube配信開始"
@@ -138,6 +138,8 @@ ja: &DEFAULT_JA
 
   footer:
     social:
+      - url: https://discord.gg/vyDsT6QKgU
+        icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
 ja-JP:
