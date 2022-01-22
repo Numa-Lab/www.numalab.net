@@ -21,5 +21,9 @@ ja: &DEFAULT_JA
       section: team
     - title: "タイムライン"
       section: timeline
+
+
+
+
 ja-JP:
   <<: *DEFAULT_JA
