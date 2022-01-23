@@ -47,7 +47,7 @@ ja: &DEFAULT_JA
     people:
       - name: "かめすた"
         role: "リーダー 開発者"
-        image: assets/img/team/Kamesuta.jpg
+        image: assets/img/team/Kamesuta.webp
         social:
           - url: https://twitter.com/Kmesuta
             icon: fab fa-twitter
@@ -71,7 +71,7 @@ ja: &DEFAULT_JA
             icon: fas fa-book-open
       - name: "わいぷす"
         role: "お世話係"
-        image: assets/img/team/stcYps.jpg
+        image: assets/img/team/stcYps.webp
         social:
           - url: https://twitter.com/stcYps7
             icon: fab fa-twitter
@@ -81,7 +81,7 @@ ja: &DEFAULT_JA
   about:
     title: "沼Labについて"
     text: "沼Labとは"
-    body: '<img src="assets/img/logo.png" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
+    body: '<img src="assets/img/logo.webp" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
     section: about
 
   timeline:
@@ -94,27 +94,27 @@ ja: &DEFAULT_JA
       - title: "沼Lab発足"
         year: "2022/01/11"
         desc: "Bun133がKUN配信中に沼DMを送ったことにより、Bun133の沼さ、そしてかめすたの沼さについて言及され、2人は「沼Lab」としてプラグインの作成を命令された。"
-        image: assets/img/timeline/1.png
+        image: assets/img/timeline/1.webp
         alt: 沼Labロゴ
       - title: "沼Lab Discord誕生"
         year: "2022/01/12"
         desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
-        image: assets/img/timeline/2.jpg
+        image: assets/img/timeline/2.webp
         alt: 沼Lab Discord
       - title: "沼Lab YouTube配信開始"
         year: "2022/01/12"
         desc: "[第一回目のプラグイン制作配信](https://youtu.be/yMRyOvaTaYM)がかめすたのYouTubeチャンネルで始まった。沼Labは「視聴者と近い」開発コミュニティを目指していく！"
-        image: assets/img/timeline/3.jpg
+        image: assets/img/timeline/3.webp
         alt: 沼Lab 配信
       - title: "沼Lab 第一回テストプレイ"
         year: "2022/01/13"
         desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! 鯖を作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
-        image: assets/img/timeline/4.png
+        image: assets/img/timeline/4.webp
         alt: 沼Lab テストプレイ
       - title: "沼Lab Webサイト公開"
         year: "2022/01/14"
         desc: "沼LabのWebサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
-        image: assets/img/timeline/5.png
+        image: assets/img/timeline/5.webp
         alt: 沼Lab Webサイト
         # you can enforce the alignment
         align: right
@@ -127,16 +127,16 @@ ja: &DEFAULT_JA
     list:
       - title: "envato"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
+        logo: assets/img/clients/envato.webp
       - title: "designmodo"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
+        logo: assets/img/clients/designmodo.webp
       - title: "themeforest"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
+        logo: assets/img/clients/themeforest.webp
       - title: "Creative Market"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/clients/creative-market.webp
 
   footer:
     social:
