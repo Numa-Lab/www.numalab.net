@@ -27,10 +27,12 @@ ja: &DEFAULT_JA
       - title: "[配信](https://www.youtube.com/c/Kamesuta)"
         desc: "YouTubeの配信やツイートで開発の様子を発信していきます。"
         icon: fab fa-youtube
+      - title: "[DISCORD](https://discord.gg/vyDsT6QKgU)"
+        desc: "沼Lab公式のDiscordサーバーを現在公開中!"
+        icon: fab fa-discord
       - title: "テストプレイ"
-        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。Discord鯖も近日公開予定です！"
+        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。"
         icon: fas fa-cube
-
   portfolio:
     title: "制作"
     text: "沼Labのプラグイン"
