@@ -27,10 +27,12 @@ ja: &DEFAULT_JA
       - title: "[配信](https://www.youtube.com/c/Kamesuta)"
         desc: "YouTubeの配信やツイートで開発の様子を発信していきます。"
         icon: fab fa-youtube
+      - title: "[DISCORD](https://discord.gg/vyDsT6QKgU)"
+        desc: "沼Lab公式のDiscordサーバーを現在公開中!"
+        icon: fab fa-discord
       - title: "テストプレイ"
-        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。Discord鯖も近日公開予定です！"
+        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。"
         icon: fas fa-cube
-
   portfolio:
     title: "制作"
     text: "沼Labのプラグイン"
@@ -79,7 +81,7 @@ ja: &DEFAULT_JA
   about:
     title: "沼Labについて"
     text: "沼Labとは"
-    body: '<img src="assets/img/logo.webp" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
+    body: '<img src="assets/img/logo.png" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
     section: about
 
   timeline:
@@ -96,8 +98,8 @@ ja: &DEFAULT_JA
         alt: 沼Labロゴ
       - title: "沼Lab Discord誕生"
         year: "2022/01/12"
-        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。近日公開予定！"
-        image: assets/img/timeline/2.webp
+        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
+        image: assets/img/timeline/2.jpg
         alt: 沼Lab Discord
       - title: "沼Lab YouTube配信開始"
         year: "2022/01/12"
@@ -138,6 +140,8 @@ ja: &DEFAULT_JA
 
   footer:
     social:
+      - url: https://discord.gg/vyDsT6QKgU
+        icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
 ja-JP:

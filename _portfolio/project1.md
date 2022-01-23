@@ -11,15 +11,17 @@ caption:
 ---
 
 # 概要
-殴るとどんどん吹っ飛び率が上昇していく。  
+
+殴るとどんどん吹っ飛び率が上昇していく。
 相手を場外にふっとばしたら勝ちだ。
 
 {:.list-inline}
+
 - [GitHub](https://github.com/Numa-Lab/SmashCraft)
 - [ダウンロード](https://github.com/Numa-Lab/SmashCraft/releases)
 
 {:.list-inline}
-- 制作日時: 2022/01/12～
+
+- 制作日時: 2022/01/12 ～
 - 製作者: かめすた
 - カテゴリ: ミニゲーム
-
