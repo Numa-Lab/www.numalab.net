@@ -1,0 +1,26 @@
+{
+  "search.exclude": {
+    "**/.pnp.*": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "**/CODEOWNERS": true,
+    "LICENSE.*": false
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "**/CODEOWNERS": true,
+    "LICENSE.*": false
+  },
+  "files.autoGuessEncoding": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+}
