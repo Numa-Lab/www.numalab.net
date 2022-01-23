@@ -81,7 +81,7 @@ ja: &DEFAULT_JA
   about:
     title: "沼Labについて"
     text: "沼Labとは"
-    body: "<img src=\"assets/img/logo.png\" alt=\"沼Lab\" width=\"200\"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。"
+    body: '<img src="assets/img/logo.png" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
     section: about
 
   timeline:
