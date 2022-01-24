@@ -10,7 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+      
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ...
+          bundler-cache: true
+          
       - name: remove files
        ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
         run: |
@@ -18,7 +23,7 @@ jobs:
 
       - uses: helaili/jekyll-action@v2
         with:
-          target_branch: ${{ github.head_ref }}/preview
+          target_branch: preview/${{ github.head_ref }}
           # target_path: v1.0
           keep_history: true
           #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
