@@ -13,7 +13,7 @@ jobs:
           with:
             token: ${{secrets.GITHUB_TOKEN}}
 
-      ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
+      ## 1
       - name: remove files
         run: |
           rm -r -f -v  Gemfile.lock
@@ -22,5 +22,5 @@ jobs:
          with:
             target_branch: preview/${github.head_ref}
             # target_path: v1.0
-            keep_history: true #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
+            keep_history: true #2
             token: ${{ secrets.GITHUB_TOKEN }}
