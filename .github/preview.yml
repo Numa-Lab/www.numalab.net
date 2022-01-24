@@ -1,0 +1,24 @@
+name: Testing the GitHub Pages publication
+
+on:
+  pull_request:
+    branches:
+      - gh-pages
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
+      - name: remove files
+        run: |
+          rm -r -f -v  Gemfile.lock
+
+      - uses: helaili/jekyll-action@v2
+         with:
+            target_branch: preview/${github.head_ref}
+            # target_path: v1.0
+            keep_history: true #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
+            token: ${{ secrets.GITHUB_TOKEN }}
