@@ -18,7 +18,7 @@ jobs:
 
       - uses: helaili/jekyll-action@v2
         with:
-          target_branch: ${{ GITHUB_REF_NAME }}/preview
+          target_branch: ${{ github.head_ref }}/preview
           # target_path: v1.0
           keep_history: true
           #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
