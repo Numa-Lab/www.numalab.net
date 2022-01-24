@@ -104,3 +104,11 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .br-dis {
+      font-size: 3rem;
+      line-height: 3rem;
+      display: none;
+     }
+}

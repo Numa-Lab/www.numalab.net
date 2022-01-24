@@ -1,11 +1,11 @@
 ---
-title: 吹っ飛び率プラグイン
+title: 吹っ飛び率<br class="br-dis">プラグイン
 subtitle: スマッシュブラザーズ in マインクラフト
 image: assets/img/portfolio/01-full.webp
 alt: 吹っ飛び率プラグインサムネイル
 
 caption:
-  title: 吹っ飛び率プラグイン
+  title: 吹っ飛び率<br>プラグイン
   subtitle: スマッシュブラザーズ in マインクラフト
   thumbnail: assets/img/portfolio/01-thumbnail.webp
 ---
