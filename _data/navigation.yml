@@ -21,9 +21,7 @@ ja: &DEFAULT_JA
       section: team
     - title: "タイムライン"
       section: timeline
-
-
-
-
+    - title: "Discordサーバー"
+      section: discord
 ja-JP:
   <<: *DEFAULT_JA
