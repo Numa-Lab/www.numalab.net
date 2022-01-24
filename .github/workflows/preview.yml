@@ -11,10 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
       - name: remove files
+       ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
         run: |
           rm -r -f -v  Gemfile.lock
+
       - uses: helaili/jekyll-action@v2
          with:
             target_branch: preview/${github.head_ref}
