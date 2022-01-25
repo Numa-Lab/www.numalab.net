@@ -120,7 +120,7 @@ ja: &DEFAULT_JA
         image: assets/img/timeline/5.webp
         alt: 沼Lab Webサイト
         # you can enforce the alignment
-        align: right
+        # align: right
     end: "まだ沼Labは <br> 始まった <br> ばかりだ!"
 
   clients:
