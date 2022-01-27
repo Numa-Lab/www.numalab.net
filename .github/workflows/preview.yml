@@ -55,8 +55,9 @@ jobs:
       - name: move file
        ## setup-nodeの仕様上ルートファイルで実行されるため
         run: |
-          mv  -v .github/GH-preview/* .
-          mv  -v .github/GH-preview/.* .
+          mv  -v -f .github/GH-preview/* .
+          mv  -v -f .github/GH-preview/.yarn .
+          mv  -v -f .github/GH-preview/.yarnrc.yml .
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
