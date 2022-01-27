@@ -74,17 +74,19 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: result.jpg .webp
-          path: |
-            result.jpg
-            result.webp
+          name: result.jpg
+          path: result.jpg
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result.webp
+          path: result.webp
 
       - name: Create comments
         run: |
           cat << EOF > comments
           ## サイトプレビュー
           EOF
-          echo ./result.webp | base64 -d >> comments
 
       - name: Post multi-line comments
         env:

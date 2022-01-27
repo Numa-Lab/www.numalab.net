@@ -23,8 +23,8 @@ async function generateImageFromNumaLab() {
   const page = await browser.newPage()
   const originalImagePath = path.join('result.jpg');// don't change webp
   await page.setViewport({
-    width: 1366,
-    height: 768
+    width: 1920,
+    height: 1080
   })
   await page.goto(url, { "waitUntil": [ 'load', 'networkidle2' ] });
 
