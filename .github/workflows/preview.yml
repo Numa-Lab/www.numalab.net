@@ -25,15 +25,15 @@ jobs:
           sudo update-locale LANG=ja_JP.UTF-8
           sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1.0
-          bundler-cache: true
-
       - name: remove files
        ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
         run: |
           rm -r -f -v  Gemfile.lock
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.0
+          bundler-cache: true
 
       - name: bundle exec jekyll build
         run: |
