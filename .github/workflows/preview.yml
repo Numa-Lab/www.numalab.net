@@ -8,8 +8,22 @@ on:
 jobs:
   jekyll:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@v2
+      - name: Change language Japanese
+        run: |
+          sudo apt-get update
+          sudo apt-get install language-pack-ja
+          sudo update-locale LANG=ja_JP.UTF-8
+          sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
       
       - uses: ruby/setup-ruby@v1
         with:
@@ -23,8 +37,26 @@ jobs:
 
       - uses: helaili/jekyll-action@v2
         with:
-          target_branch: preview/${{ github.head_ref }}
+          # target_branch: preview/${{ github.head_ref }}
           # target_path: v1.0
           keep_history: true
           #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
           token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: ls
+        run: |
+          ls
+          
+      - name: cd _site
+        run: |
+          cd _site
+          
+      - name: ls
+       ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
+        run: |
+          ls
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
