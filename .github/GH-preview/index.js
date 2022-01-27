@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 console.log(__dirname)
 
 async function generateImageFromNumaLab() {
-  const html = __dirname + "/../../_site/index.html"
+  const html = __dirname + "/site/index.html" //GitHub actionsのときファイル移動するから注意！ "/../../_site/index.html"
   //const buffer = await fs.readFile(html)
   //console.log(`${buffer.toString("base64")}`)
   const url = html;
