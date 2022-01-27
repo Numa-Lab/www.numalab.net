@@ -39,14 +39,6 @@ jobs:
         run: |
           bundle exec jekyll build
 
-#      - uses: helaili/jekyll-action@v2
-#        with:
-#          # target_branch: preview/${{ github.head_ref }}
-#          # target_path: v1.0
-#          keep_history: true
-#          #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
-#          token: ${{ secrets.GITHUB_TOKEN }}
-
       - uses: actions/upload-artifact@v2
         with:
           name: _site
@@ -69,9 +61,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
+
       - name: Install deps
         run: |
           yarn
+
       - name: Build
         run: |
           yarn run build
@@ -83,16 +77,16 @@ jobs:
             result.jpg
             result.webp
 
-    - name: Create comments
-      run: |
-        cat << EOF > comments
-        ## サイトプレビュー
-        EOF
-        echo ./result.webp | base64 -d >> comments
+      - name: Create comments
+        run: |
+          cat << EOF > comments
+          ## サイトプレビュー
+          EOF
+          echo ./result.webp | base64 -d >> comments
 
-    - name: Post multi-line comments
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        URL: ${{ github.event.pull_request.html_url }}
-      run:
-        gh pr comment -F ./comments "${URL}"
+      - name: Post multi-line comments
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          URL: ${{ github.event.pull_request.html_url }}
+        run:
+          gh pr comment -F ./comments "${URL}"
