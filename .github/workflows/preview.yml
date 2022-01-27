@@ -24,17 +24,17 @@ jobs:
           sudo apt-get install language-pack-ja
           sudo update-locale LANG=ja_JP.UTF-8
           sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
-      
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.0
           bundler-cache: true
-          
+
       - name: remove files
        ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
         run: |
           rm -r -f -v  Gemfile.lock
-          
+
       - name: bundle exec jekyll build
         run: |
           bundle exec jekyll build
@@ -46,20 +46,53 @@ jobs:
 #          keep_history: true
 #          #falseにしたら、コミット履歴吹っ飛ぶよ...(仕組みを理解したうえでfalseにして....)
 #          token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: ls
-        run: |
-          ls
-          
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: _site
+          path: _site
+
       - name: cd _site
         run: |
           cd _site
-          
-      - name: ls
+
+      - name: ls -lS --full-time
         run: |
-          ls
+          ls -lS --full-time
+
+      - name: cd .github folder
+        run: |
+          cd ./.github/GH-preview
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+      - name: Install deps
+        run: |
+          yarn
+      - name: Build
+        run: |
+          yarn run build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result.jpg .webp
+          path: |
+            result.jpg
+            result.webp
+
+    - name: Create comments
+      run: |
+        cat << EOF > comments
+        ## サイトプレビュー
+        EOF
+        echo ./result.webp | base64 -d >> comments
+
+    - name: Post multi-line comments
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        URL: ${{ github.event.pull_request.html_url }}
+      run:
+        gh pr comment -F ./comments "${URL}"
