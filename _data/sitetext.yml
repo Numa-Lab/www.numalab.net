@@ -33,6 +33,9 @@ ja: &DEFAULT_JA
       - title: "テストプレイ"
         desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。"
         icon: fas fa-cube
+      - title: "生活鯖"
+        desc: "沼Labの人たちが生活しているMinecraftサーバー<br>鯖の詳細はDiscordサーバー内で！"
+        icon: fas fa-home
   portfolio:
     title: "制作"
     text: "沼Labのプラグイン"
@@ -117,26 +120,8 @@ ja: &DEFAULT_JA
         image: assets/img/timeline/5.webp
         alt: 沼Lab Webサイト
         # you can enforce the alignment
-        align: right
+        # align: right
     end: "まだ沼Labは <br> 始まった <br> ばかりだ!"
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.webp
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.webp
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.webp
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.webp
 
   footer:
     social:
