@@ -12,7 +12,7 @@ baseurl: "/"
 repository: Numa-Lab/www.numalab.net
 
 logo: #optional, defaults to site title
-  path: /assets/img/logo.webp
+  path: /assets/img/logo.png
   height: 60 #height in px, defaults to 52px
 
 locale: "ja-JP"
