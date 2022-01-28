@@ -70,17 +70,16 @@ jobs:
           name: result.webp
           path: result.webp
 
-      - name: Create comments
-        run: |
-          cat << EOF > comments
-          GitHub Pages のパブリッシュテストが完了しました。
-          
-          https://github.com/Numa-Lab/www.numalab.net/runs/${github.run_id}
-          EOF
-
-      - name: Post multi-line comments
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          URL: ${{ github.event.pull_request.html_url }}
-        run:
-          gh pr comment -F ./comments "${URL}"
+##      - name: Create comments
+##        run: |
+##          cat << EOF > comments
+##          ## サイトプレビュー
+##          EOF
+##          echo ”https://github.com/Numa-Lab/www.numalab.net/runs/${github.run_id}” >> comments
+##
+##      - name: Post multi-line comments
+##        env:
+##          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+##          URL: ${{ github.event.pull_request.html_url }}
+##        run:
+##          gh pr comment -F ./comments "${URL}"
