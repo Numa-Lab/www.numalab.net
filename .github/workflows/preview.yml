@@ -44,11 +44,11 @@ jobs:
         run: |
           ls -lS --full-time
       - name: move file
+        continue-on-error: true
        ## setup-nodeの仕様上ルートファイルで実行されるため
         run: |
           mv  -v -f .github/GH-preview/* .
-          mv  -v -f .github/GH-preview/.yarn .
-          mv  -v -f .github/GH-preview/.yarnrc.yml .
+          mv  -v -f .github/GH-preview/.* .
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
