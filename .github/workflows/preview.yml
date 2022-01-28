@@ -73,9 +73,10 @@ jobs:
       - name: Create comments
         run: |
           cat << EOF > comments
-          ## サイトプレビュー
+          GitHub Pages のパブリッシュテストが完了しました。
+          
+          https://github.com/Numa-Lab/www.numalab.net/runs/${github.run_id}
           EOF
-          echo ./result.webp | base64 -d >> comments
 
       - name: Post multi-line comments
         env:
