@@ -24,12 +24,10 @@ jobs:
           sudo apt-get install language-pack-ja
           sudo update-locale LANG=ja_JP.UTF-8
           sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
-
       - name: remove files
        ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
         run: |
           rm -r -f -v  Gemfile.lock
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.0
@@ -38,7 +36,6 @@ jobs:
       - name: bundle exec jekyll build
         run: |
           bundle exec jekyll build
-
       - uses: actions/upload-artifact@v2
         with:
           name: _site
@@ -47,18 +44,15 @@ jobs:
       - name: cd _site
         run: |
           cd _site
-
       - name: ls -lS --full-time
         run: |
           ls -lS --full-time
-
       - name: move file
        ## setup-nodeの仕様上ルートファイルで実行されるため
         run: |
           mv  -v -f .github/GH-preview/* .
           mv  -v -f .github/GH-preview/.yarn .
           mv  -v -f .github/GH-preview/.yarnrc.yml .
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
@@ -67,11 +61,9 @@ jobs:
       - name: Install deps
         run: |
           yarn
-
       - name: Build
         run: |
           yarn run build
-
       - uses: actions/upload-artifact@v2
         with:
           name: result.jpg
@@ -87,7 +79,6 @@ jobs:
           cat << EOF > comments
           ## サイトプレビュー
           EOF
-
       - name: Post multi-line comments
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
