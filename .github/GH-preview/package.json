@@ -1,5 +1,5 @@
 {
-  "name": "gitlab",
+  "name": "screenshot",
   "version": "1.2.0",
   "description": "Screenshot Website",
   "main": "index.js",
@@ -7,16 +7,6 @@
   "scripts": {
     "build": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CommentGeneratorCollection/GitLab.git"
-  },
-  "author": "Neko7sora",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CommentGeneratorCollection/GitLab/issues"
-  },
-  "homepage": "https://github.com/CommentGeneratorCollection/GitLab#readme",
   "dependencies": {
     "imagemin": "^8.0.1",
     "imagemin-webp": "7.0.0",
