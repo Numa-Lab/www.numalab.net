@@ -9,10 +9,6 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -53,10 +49,10 @@ jobs:
           mv  -v -f .github/GH-preview/* .
           mv  -v -f .github/GH-preview/.yarn .
           mv  -v -f .github/GH-preview/.yarnrc.yml .
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16.x
 
       - name: Install deps
         run: |
@@ -79,6 +75,8 @@ jobs:
           cat << EOF > comments
           ## サイトプレビュー
           EOF
+          echo ./result.webp | base64 -d >> comments
+
       - name: Post multi-line comments
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
