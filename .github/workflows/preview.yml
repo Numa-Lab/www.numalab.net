@@ -3,7 +3,7 @@ name: Testing the GitHub Pages publication
 on:
   pull_request:
     branches:
-      - ghtest3
+      - gh-pages
 
 jobs:
   jekyll:
