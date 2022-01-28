@@ -7,7 +7,7 @@ author: Kamesuta
 github_username: Numa-Lab
 
 logo: #optional, defaults to site title
-  path: /assets/img/logo.png
+  path: /assets/img/logo.webp
   height: 60 #height in px, defaults to 52px
 
 locale: "ja-JP"
