@@ -13,7 +13,7 @@
         width: 2px;
         margin-left: -1.5px;
         content: "";
-        background-color: $gray-200;
+        background-color: $gray-100;
     }
 
     >li {
@@ -209,4 +209,8 @@
             }
         }
     }
+}
+
+#timeline {
+    background-color: #fff !important;
 }
