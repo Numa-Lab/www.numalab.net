@@ -1,0 +1,17 @@
+{
+  "name": "screenshot",
+  "version": "1.2.0",
+  "description": "Screenshot Website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "7.0.0",
+    "puppeteer": "^13.0.0",
+    "trim-newlines": "^4.0.0"
+  },
+  "packageManager": "yarn@3.1.1"
+}
