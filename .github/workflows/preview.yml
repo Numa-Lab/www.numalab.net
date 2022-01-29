@@ -1,0 +1,85 @@
+name: Testing the GitHub Pages publication
+
+on:
+  pull_request:
+    branches:
+      - gh-pages
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Change language Japanese
+        run: |
+          sudo apt-get update
+          sudo apt-get install language-pack-ja
+          sudo update-locale LANG=ja_JP.UTF-8
+          sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
+      - name: remove files
+       ## バンドラーのRuby バージョンの要件が競合するのを防ぐ
+        run: |
+          rm -r -f -v  Gemfile.lock
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.0
+          bundler-cache: true
+
+      - name: bundle exec jekyll build
+        run: |
+          bundle exec jekyll build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: _site
+          path: _site
+
+      - name: cd _site
+        run: |
+          cd _site
+      - name: ls -lS --full-time
+        run: |
+          ls -lS --full-time
+      - name: move file
+        continue-on-error: true
+       ## setup-nodeの仕様上ルートファイルで実行されるため
+        run: |
+          mv  -v -f .github/GH-preview/* .
+          mv  -v -f .github/GH-preview/.* .
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Install deps
+        run: |
+          yarn
+      - name: Build
+        run: |
+          yarn run build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result.jpg
+          path: result.jpg
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result.webp
+          path: result.webp
+
+##      - name: Create comments
+##        run: |
+##          cat << EOF > comments
+##          ## サイトプレビュー
+##          EOF
+##          echo ”https://github.com/Numa-Lab/www.numalab.net/runs/${github.run_id}” >> comments
+##
+##      - name: Post multi-line comments
+##        env:
+##          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+##          URL: ${{ github.event.pull_request.html_url }}
+##        run:
+##          gh pr comment -F ./comments "${URL}"
