@@ -129,5 +129,6 @@ ja: &DEFAULT_JA
         icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
+
 ja-JP:
   <<: *DEFAULT_JA
