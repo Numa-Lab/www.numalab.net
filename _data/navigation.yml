@@ -23,5 +23,7 @@ ja: &DEFAULT_JA
       section: timeline
     - title: "Discordサーバー"
       section: discord
+    - title: "生活鯖"
+      section: lively
 ja-JP:
   <<: *DEFAULT_JA
