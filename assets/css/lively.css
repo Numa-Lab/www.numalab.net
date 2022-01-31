@@ -75,30 +75,3 @@
 .slick-dots .slick-active button{
     background:#333;/*ドットボタンの現在地表示の色*/
 }
-
-
-/*========= レイアウトのためのCSS ===============*/
-
-body{
-	background:#eee;
-}
-
-h2,p {
-    text-align:center;
-    padding:20px;
-}
-
-ul{
-	margin:0;
-	padding: 0;
-	list-style: none;
-}
-
-a{
-	color: #333;
-}
-
-a:hover,
-a:active{
-	text-decoration: none;
-}
