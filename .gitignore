@@ -18,9 +18,4 @@ node_modules
 
 # https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 /.yarn/*
-!/.yarn/patches
-!/.yarn/plugins
-!/.yarn/releases
-!/.yarn/sdks
-!/.yarn/cache
 install-state.gz
