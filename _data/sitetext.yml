@@ -18,27 +18,28 @@ ja: &DEFAULT_JA
 
   services:
     title: "活動"
-    text: "沼Labは何をするところ？"
+    text: "何をするところ？"
     section: services
     list:
       - title: "プラグイン開発"
         desc: "Java言語を使用してMinecraftのプラグインやModを制作します。また、必要に応じてリソースパックやデータパックを制作します。"
         icon: fas fa-laptop-code #find more at https://fontawesome.com/icons
-      - title: "[配信](https://www.youtube.com/c/Kamesuta)"
-        desc: "YouTubeの配信やツイートで開発の様子を発信していきます。"
+      - title: "配信"
+        desc: "YouTubeの配信やツイートでコミュニティの様子を発信しています。<br>「 沼Lab 」で検索すると情報収集ができるよ！"
         icon: fab fa-youtube
-      - title: "[DISCORD](https://discord.gg/vyDsT6QKgU)"
-        desc: "沼Lab公式のDiscordサーバーを現在公開中!"
+      - title: "シェア"
+        desc: "ソースコードを共有することで問題を解決し、アイデアを実現し、その過程で互いに学び合うことができます。"
+        icon: fas fa-shapes
+      - title: "コミュニティ"
+        desc: "電話認証を行うか、マイクラとDiscordアカウントをリンクすると発言できるよ。<br>Discord招待リンクは自力で探して参加してね！"
         icon: fab fa-discord
       - title: "テストプレイ"
-        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。"
+        desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。<br>バグを見つけたらすみやかに報告してね！"
         icon: fas fa-cube
-      - title: "生活鯖"
-        desc: "沼Labの人たちが生活しているMinecraftサーバー<br>鯖の詳細はDiscordサーバー内で！"
+      - title: "マイクラサーバー"
+        desc: "いろんな人たちといっしょにMinecraftサーバーでコントリビュートしよう。<br>サーバーの詳細はDiscordサーバー内で！"
         icon: fas fa-home
   portfolio:
-    title: "制作"
-    text: "沼Labのプラグイン"
     section: portfolio
     closebutton: "閉じる"
 
@@ -50,7 +51,7 @@ ja: &DEFAULT_JA
     people:
       - name: "かめすた"
         role: "リーダー 開発者"
-        image: assets/img/team/Kamesuta.webp
+        github: 16362824
         social:
           - url: https://twitter.com/Kmesuta
             icon: fab fa-twitter
@@ -62,9 +63,11 @@ ja: &DEFAULT_JA
             icon: fas fa-book-open
       - name: "Bun133"
         role: "開発者"
-        image: assets/img/team/Bun133.webp
+        github: 57163334
         social:
           - url: https://twitter.com/bun133_
+            icon: fab fa-twitter
+          - url: https://twitter.com/bun133_2
             icon: fab fa-twitter
           - url: https://www.youtube.com/channel/UCMkRURJGzNnML3Rprb21O5A
             icon: fab fa-youtube
@@ -72,19 +75,29 @@ ja: &DEFAULT_JA
             icon: fab fa-github
           - url: https://fifty-people-craft.fandom.com/ja/wiki/%E3%83%96%E3%83%B3
             icon: fas fa-book-open
-      - name: "わいぷす"
-        role: "お世話係"
-        image: assets/img/team/stcYps.webp
+      - name: "kouta神"
+        role: "かめぱわ～"
+        image: assets/img/team/KoutaKami.webp
         social:
-          - url: https://twitter.com/stcYps7
+          - url: https://twitter.com/koutatv620
             icon: fab fa-twitter
-          - url: https://github.com/stcYps
-            icon: fab fa-github
+          - url: https://twitter.com/kouta_kagiakaa
+            icon: fab fa-twitter
+          - url: https://twitter.com/Akari_JK620
+            icon: fab fa-twitter
+          - url: https://twitter.com/fa_kouta
+            icon: fab fa-twitter
+          - url: https://www.instagram.com/godkoutan/
+            icon: fab fa-instagram
+          - url: https://www.youtube.com/channel/UCMkRURJGzNnML3Rprb21O5A
+            icon: fab fa-youtube
+          - url: https://fifty-people-craft.fandom.com/ja/wiki/%E3%81%93%E3%81%86%E3%81%9F%E3%82%93
+            icon: fas fa-book-open
 
   about:
     title: "沼Labについて"
     text: "沼Labとは"
-    body: '<img src="assets/img/logo.webp" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
+    body: '<img src="./assets/img/logo.webp" alt="沼Lab" width="200"><br><br><br>沼Labは沼勢によるプログラミングを使ってKUNチャンネルのネタを制作するコミュニティです。<br>配信や参加型テストプレイなどにより視聴者フレンドリーな開発コミュニティを目指していきます。'
     section: about
 
   timeline:
@@ -99,9 +112,9 @@ ja: &DEFAULT_JA
         desc: "Bun133がKUN配信中に沼DMを送ったことにより、Bun133の沼さ、そしてかめすたの沼さについて言及され、2人は「沼Lab」としてプラグインの作成を命令された。"
         image: assets/img/timeline/1.webp
         alt: 沼Labロゴ
-      - title: "沼Lab Discord誕生"
+      - title: "Discord誕生"
         year: "2022/01/12"
-        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
+        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discordサーバーを作る。テキストチャットで方針などの会議が始まった。"
         image: assets/img/timeline/2.webp
         alt: 沼Lab Discord
       - title: "沼Lab YouTube配信開始"
@@ -111,14 +124,14 @@ ja: &DEFAULT_JA
         alt: 沼Lab 配信
       - title: "沼Lab 第一回テストプレイ"
         year: "2022/01/13"
-        desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! 鯖を作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
+        desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! サーバーを作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
         image: assets/img/timeline/4.webp
         alt: 沼Lab テストプレイ
-      - title: "沼Lab Webサイト公開"
+      - title: "Webサイト公開"
         year: "2022/01/14"
-        desc: "沼LabのWebサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
+        desc: "Webサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
         image: assets/img/timeline/5.webp
-        alt: 沼Lab Webサイト
+        alt: Webサイト
         # you can enforce the alignment
         # align: right
     end: "まだ沼Labは <br> 始まった <br> ばかりだ!"
@@ -129,6 +142,10 @@ ja: &DEFAULT_JA
         icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
+      - url: /repo
+        icon: "fas fa-folder-tree"
+      - url: /sitemap
+        icon: "fas fa-sitemap"
 
 ja-JP:
   <<: *DEFAULT_JA
