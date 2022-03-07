@@ -6,7 +6,7 @@ on:
       - gh-pages
 
 jobs:
-  jekyll:
+  build:
     runs-on: ubuntu-latest
 
     env:
@@ -14,28 +14,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: remove files
-        ## Ruby バージョンの要件が競合するのを防ぐ
-        run: |
-          rm -r -f -v  Gemfile.lock
-      - uses: ruby/setup-ruby@v1
+      - uses: actions/jekyll-build-pages@v1
         with:
-          ruby-version: 3.1.0
-          bundler-cache: true
-
-      - run: |
-          bundle exec jekyll build
+          source: .
+          destination: ./_site
       - uses: actions/upload-artifact@v2
         with:
           name: _site
           path: _site
+          if-no-files-found: warn
 
   screenshot:
+    needs: build
     runs-on: ubuntu-latest
-    needs: jekyll
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -50,7 +41,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install language-pack-ja
           sudo update-locale LANG=ja_JP.UTF-8
-          sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
       - name: move file
         continue-on-error: true
         ## setup-nodeの仕様上ルートファイルで実行されるため
@@ -58,22 +48,20 @@ jobs:
           mv  -v -f .github/GH-preview/* .
           mv  -v -f .github/GH-preview/.* .
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          node-version: 16
           cache-dependency-path: |
-            yarn.lock
             .yarn
             node_modules
       - name: Playwright CLI Setup
         ## https://github.com/microsoft/playwright-github-action
         run: |
-          npx playwright install-deps
+          npx playwright install-deps chromium
       - name: Install deps
         run: |
           yarn set version berry
-          yarn
+          YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
       - name: Build
         run: |
           yarn run build
