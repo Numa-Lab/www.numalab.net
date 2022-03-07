@@ -6,7 +6,7 @@ description: サイトマップ
 
 ## サイトマップ
 
-- **[{{ 'sitemap.txt' | replace:'index.html','' | prepend: site.baseurl | prepend: '.' }}]({{ 'sitemap.txt' | replace:'index.html','' | prepend: site.baseurl | prepend: '.' }})**
+- **[./sitemap.txt](./sitemap.txt)**
 
 {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}{% for collection in collections %}{% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}{% for doc in docs %}
 - [{{ doc.url | replace:'/index.html','/' | xml_escape | prepend: '.' }}]({{ doc.url | replace:'/index.html','/' | xml_escape | prepend: '.' }})
