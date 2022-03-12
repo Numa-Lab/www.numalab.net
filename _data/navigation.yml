@@ -21,9 +21,9 @@ ja: &DEFAULT_JA
       section: team
     - title: "タイムライン"
       section: timeline
-    - title: "コミュニティ"
+    - title: "Discordサーバー"
       section: discord
-    - title: "マイクラ"
-      section: minecraft
+    - title: "生活鯖"
+      section: lively
 ja-JP:
   <<: *DEFAULT_JA
