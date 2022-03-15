@@ -1,7 +1,7 @@
 ---
-title: 生活サーバーs2
+title: 生活サーバーS2
 permalink: /minecraft-lively-s2
-description: 生活サーバーs2に関して
+description: 生活サーバーS2に関して
 ---
 <!-- 上記の行を include_relative で表示させないためにコメントアウトの仕様を使っています。(この1行が) -->
 
@@ -9,8 +9,8 @@ description: 生活サーバーs2に関して
   <div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2 class="section-heading text-uppercase">生活サーバーs2</h2>
-				<h3 class="section-subheading text-muted">生活サーバーがリニューアルして0からになりました！<br><b>これから入ろうとしている人も前からやっている人に追いつけます！！</b><br>BEの方も歓迎　ぜひ生活サーバーへ！</h3>
+				<h2 class="section-heading text-uppercase">生活サーバーS2</h2>
+				<h3 class="section-subheading text-muted">S1からプラスされた機能！<br>＋チャンク保護 → 生活ワールドで自分の所有地を証明しよう<br>＋資源ワールド → チャンク保護されていない世界で資源を入手しよう<br>＋ホームワープ機能 → 遠くに建築立てても、ワープでテレポート！</h3>
 			</div>
 		</div>
 		<div style="text-align: center;">

@@ -1,14 +1,14 @@
 ---
-title: 生活サーバーs1
+title: 生活サーバーS1
 permalink: /minecraft-lively-s1
-description: 生活サーバーs1に関して
+description: 生活サーバーS1に関して
 ---
 
 <section class="page-section" id="lively" style="background-color: #fff">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">生活サーバーs1</h2>
+        <h2 class="section-heading text-uppercase">生活サーバーS1</h2>
         <h3 class="section-subheading text-muted">沼Labのみんなの生活サーバー！</h3>
       </div>
     </div>
