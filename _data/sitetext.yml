@@ -33,8 +33,8 @@ ja: &DEFAULT_JA
       - title: "テストプレイ"
         desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。"
         icon: fas fa-cube
-      - title: "生活鯖"
-        desc: "沼Labの人たちが生活しているMinecraftサーバー<br>鯖の詳細はDiscordサーバー内で！"
+      - title: "生活サーバー"
+        desc: "沼Labの人たちが生活しているMinecraftサーバー<br>サーバーの詳細はDiscordサーバー内で！"
         icon: fas fa-home
   portfolio:
     title: "制作"
@@ -101,7 +101,7 @@ ja: &DEFAULT_JA
         alt: 沼Labロゴ
       - title: "沼Lab Discord誕生"
         year: "2022/01/12"
-        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discord鯖を作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
+        desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discordサーバーを作る。テキストチャットで方針などの会議が始まった。[ここ](https://discord.gg/vyDsT6QKgU)から誰でも参加できる。"
         image: assets/img/timeline/2.webp
         alt: 沼Lab Discord
       - title: "沼Lab YouTube配信開始"
@@ -111,7 +111,7 @@ ja: &DEFAULT_JA
         alt: 沼Lab 配信
       - title: "沼Lab 第一回テストプレイ"
         year: "2022/01/13"
-        desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! 鯖を作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
+        desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! サーバーを作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
         image: assets/img/timeline/4.webp
         alt: 沼Lab テストプレイ
       - title: "沼Lab Webサイト公開"
