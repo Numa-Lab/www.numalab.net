@@ -20,6 +20,16 @@ locale: "ja-JP"
 analytics:
   google: G-CNWPLXESZS
 
+defaults:
+  - scope:
+      path: "*.exe"
+    values:
+      sitemap: false
+  - scope:
+      path: "*.app"
+    values:
+      sitemap: false
+
 collections:
   portfolio:
 
