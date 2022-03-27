@@ -51,7 +51,7 @@ ja: &DEFAULT_JA
     people:
       - name: "かめすた"
         role: "リーダー 開発者"
-        github: 16362824
+        image: assets/img/team/Kamesuta.webp
         social:
           - url: https://twitter.com/Kmesuta
             icon: fab fa-twitter
@@ -63,7 +63,7 @@ ja: &DEFAULT_JA
             icon: fas fa-book-open
       - name: "Bun133"
         role: "開発者"
-        github: 57163334
+        image: assets/img/team/Bun133.webp
         social:
           - url: https://twitter.com/bun133_
             icon: fab fa-twitter
@@ -112,7 +112,7 @@ ja: &DEFAULT_JA
         desc: "Bun133がKUN配信中に沼DMを送ったことにより、Bun133の沼さ、そしてかめすたの沼さについて言及され、2人は「沼Lab」としてプラグインの作成を命令された。"
         image: assets/img/timeline/1.webp
         alt: 沼Labロゴ
-      - title: "Discord誕生"
+      - title: "沼Lab Discord誕生"
         year: "2022/01/12"
         desc: "沼Labとしてプラグインを完成させるべく、かめすたは早速Discordサーバーを作る。テキストチャットで方針などの会議が始まった。"
         image: assets/img/timeline/2.webp
@@ -127,9 +127,9 @@ ja: &DEFAULT_JA
         desc: "沼Lab初のプラグイン、「吹っ飛び率プラグイン」が完成間近! サーバーを作り、配信でプレイヤーを集め、みんなでテストプレイを行った。"
         image: assets/img/timeline/4.webp
         alt: 沼Lab テストプレイ
-      - title: "Webサイト公開"
+      - title: "沼Lab Webサイト公開"
         year: "2022/01/14"
-        desc: "Webサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
+        desc: "沼LabのWebサイトができた。まだあまり記事がないが、これから充実させていく。プラグインはここで公開/配布していく予定だ。"
         image: assets/img/timeline/5.webp
         alt: Webサイト
         # you can enforce the alignment
@@ -142,10 +142,6 @@ ja: &DEFAULT_JA
         icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
-      - url: /repo
-        icon: "fas fa-folder-tree"
-      - url: /sitemap
-        icon: "fas fa-sitemap"
 
 ja-JP:
   <<: *DEFAULT_JA

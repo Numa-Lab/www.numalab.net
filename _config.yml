@@ -39,6 +39,5 @@ markdown: kramdown
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-avatar
   - jekyll-github-metadata
   - jekyll-relative-links
