@@ -19,5 +19,5 @@ if "%1"  == ".jpg" (
 )
 
 cd /d "%~dp0"
-cd libwebp-1.2.2-windows-x64
+cd ../libwebp-1.2.2-windows-x64
 cwebp.exe -lossless "%~f2" -o "%~d2%~p2%~n2.webp"

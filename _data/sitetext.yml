@@ -77,7 +77,7 @@ ja: &DEFAULT_JA
             icon: fas fa-book-open
       - name: "kouta神"
         role: "かめぱわ～"
-        image: assets/img/team/KoutaKami.webp
+        image: assets/img/team/koutatv620.webp
         social:
           - url: https://twitter.com/koutatv620
             icon: fab fa-twitter
