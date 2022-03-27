@@ -33,7 +33,21 @@ defaults:
 collections:
   portfolio:
 
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: page
+      posttype: page
+      posttype_url: /
+      posttype_name: "Pages"
+      pages: true
+      background: grey
+
 markdown: kramdown
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-github-metadata
+  - jekyll-relative-links
