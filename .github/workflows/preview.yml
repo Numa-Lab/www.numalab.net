@@ -46,10 +46,8 @@ jobs:
         ## setup-nodeの仕様上ルートファイルで実行されるため
         ## パスの関係上、ルートで実行するため
         run: |
-          mv  -v -f .github/GH-preview/* .
-          mv  -v -f .github/GH-preview/.* .
-          mv  -v -f _site/* .
-          mv  -v -f _site/_* .
+          sudo mv -v -f .github/GH-preview .
+          sudo mv -v -f _site .
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
