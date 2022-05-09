@@ -4,7 +4,7 @@ console.log(__dirname);
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto("file://" + __dirname + "/_site/index.html");//GitHub actionsのときファイル移動するから注意！ "/../../_site/index.html""/_site/index.html"
+  await page.goto("file://" + __dirname + "/index.html");//GitHub actionsのときファイル移動するから注意！ "/../../_site/index.html""/_site/index.html"
   await page.setViewportSize({
     width: 1920,
     height: 1080

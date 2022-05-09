@@ -34,7 +34,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: _site
-          path: _site
+          path: .
 
       - name: Change language Japanese
         run: |
@@ -44,9 +44,10 @@ jobs:
       - name: move file
         continue-on-error: true
         ## setup-nodeの仕様上ルートファイルで実行されるため
+        ## パスの関係上、ルートで実行するため
         run: |
           mv  -v -f .github/GH-preview/* .
-          mv  -v -f .github/GH-preview/.* .
+          mv  -v -f .github/GH-preview/.yarnrc.yml .
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
