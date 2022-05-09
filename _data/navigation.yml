@@ -21,9 +21,5 @@ ja: &DEFAULT_JA
       section: team
     - title: "タイムライン"
       section: timeline
-    - title: "Discordサーバー"
-      section: discord
-    - title: "生活サーバー"
-      section: lively
 ja-JP:
   <<: *DEFAULT_JA
