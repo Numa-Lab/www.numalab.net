@@ -62,7 +62,7 @@
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
   <link
@@ -88,10 +88,8 @@
 
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="assets/css/agency.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link href="{{ '/assets/css/agency.css' | relative_directory }}" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="assets/css/lively.css">
 
   <!-- Page container change top padding when nav shrinks -->
   {% if page.layout == "page" %}
