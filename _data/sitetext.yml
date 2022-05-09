@@ -120,8 +120,6 @@ ja: &DEFAULT_JA
 
   footer:
     social:
-      - url: https://discord.gg/vyDsT6QKgU
-        icon: "fab fa-discord"
       - url: https://github.com/Numa-Lab
         icon: "fab fa-github"
       - url: ./sitemap
