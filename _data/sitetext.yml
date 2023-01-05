@@ -27,18 +27,9 @@ ja: &DEFAULT_JA
       - title: "配信"
         desc: "YouTubeの配信やツイートでコミュニティの様子を発信しています。<br>「 沼Lab 」で検索すると情報収集ができるよ！"
         icon: fab fa-youtube
-      - title: "シェア"
-        desc: "ソースコードを共有することで問題を解決し、アイデアを実現し、その過程で互いに学び合うことができます。"
-        icon: fas fa-shapes
-      - title: "コミュニティ"
-        desc: "電話認証を行うか、マイクラとDiscordアカウントをリンクすると発言できるよ。<br>Discord招待リンクは自力で探して参加してね！"
-        icon: fab fa-discord
       - title: "テストプレイ"
         desc: "Minecraftサーバーで、視聴者参加型のテストプレイを開催します。<br>バグを見つけたらすみやかに報告してね！"
         icon: fas fa-cube
-      - title: "マイクラサーバー"
-        desc: "いろんな人たちといっしょにMinecraftサーバーでコントリビュートしよう。<br>サーバーの詳細はDiscordサーバー内で！"
-        icon: fas fa-home
   portfolio:
     section: portfolio
     closebutton: "閉じる"
